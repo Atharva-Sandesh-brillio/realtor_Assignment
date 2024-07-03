@@ -6,8 +6,9 @@ metadata:
   tags:
     - react
     - backend
+  annotations:
+    github.com/project-slug:Atharva-Sandesh-brillio/realtor_Assignment
 spec:
   type: website
   owner: "guests"
   lifecycle: production
-  repository: https://github.com/Atharva-Sandesh-brillio/realtor_Assignment
