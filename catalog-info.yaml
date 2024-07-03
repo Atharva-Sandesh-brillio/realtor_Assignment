@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: realtor-user-auth-assignment
+  description: A web application for managing real estate leads and sources.
+  tags:
+    - react
+    - backend
+spec:
+  type: website
+  owner: "guests"
+  lifecycle: production
+  repository: https://github.com/Atharva-Sandesh-brillio/Realtor-UserAuth-Assignment-/tree/Atharva-Sandesh-brillio-backstagedemo
