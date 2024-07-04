@@ -18,9 +18,9 @@ spec:
   owner: "guests"
   system: realtor_system
   providesApis:
-    - example-api
+    - Users-api
   consumesApis:
-    - other-api
+    - Photos-api
   dependsOn:
     - service: another-service
     - api: some-external-api
@@ -33,16 +33,3 @@ spec:
     - url: https://jsonplaceholder.typicode.com/photos
       title: Photos API
       type: consumed
-  ci/cd:
-    - type: github-actions
-      name: Build and Deploy
-      url: https://github.com/your-org/your-repo/actions/workflows/build-and-deploy.yml
-    - type: circleci
-      name: CircleCI Workflow
-      url: https://circleci.com/gh/your-org/your-repo
-    - type: jenkins
-      name: Jenkins Pipeline
-      url: https://jenkins.your-org.com/job/your-job
-    - type: argo-cd
-      name: Argo CD Application
-      url: https://argocd.your-org.com/applications/your-app
