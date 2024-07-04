@@ -6,9 +6,14 @@ metadata:
   annotations:
     github.com/project-slug: Atharva-Sandesh-brillio/realtor_Assignment
     backstage.io/techdocs-ref: url:https://github.com/Atharva-Sandesh-brillio/realtor_Assignment/blob/main/README.md
+  tags:
+    - react-js
+    - json-server
+    - realestate
+    - node-js
+    - development
 spec:
   type: service
   lifecycle: production
   owner: "guests"
   system: realtor_system
-  tags: ["frontend", "react", "UserAuth"]
