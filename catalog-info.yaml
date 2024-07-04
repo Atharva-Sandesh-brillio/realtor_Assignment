@@ -6,9 +6,6 @@ metadata:
   annotations:
     github.com/project-slug: Atharva-Sandesh-brillio/realtor_Assignment
     backstage.io/techdocs-ref: url:https://github.com/Atharva-Sandesh-brillio/realtor_Assignment/blob/main/README.md
-tags:
-    - frontend
-    - React
 spec:
   type: service
   lifecycle: production
