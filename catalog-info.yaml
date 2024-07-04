@@ -2,9 +2,16 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: realtor_Assignment
+  description: Sample Component for realtor assignment.
   annotations:
     github.com/project-slug: Atharva-Sandesh-brillio/realtor_Assignment
+    backstage.io/techdocs-ref: url:https://github.com/Atharva-Sandesh-brillio/realtor_Assignment/docs
 spec:
-  type: other
-  lifecycle: unknown
+  type: service
+  lifecycle: production
   owner: "guests"
+  system: realtor_system
+  tags: 
+    - frontend
+    - React
+    - User Authentication
