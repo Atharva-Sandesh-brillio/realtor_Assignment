@@ -14,18 +14,3 @@ spec:
   lifecycle: production
   owner: "guests"
   system: realtor_system
-  providesApis:
-    - Users-api
-  consumesApis:
-    - Photos-api
-  dependsOn:
-    - service:example-service
-  links:
-    - url: https://jsonplaceholder.typicode.com/users
-      title: Users API
-      type: provided
-    - url: https://jsonplaceholder.typicode.com/photos
-      title: Photos API
-      type: consumed
-  ci/cd:
-    - github-actions
