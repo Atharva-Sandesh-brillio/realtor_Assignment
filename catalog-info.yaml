@@ -22,10 +22,10 @@ spec:
   consumesApis:
     - Photos-api
   dependsOn:
-    - service: another-service
-    - api: some-external-api
-    - library: some-library
-    - database: some-database
+    - service:another-service
+    - api:some-external-api
+    - library:some-library
+    - database:some-database
   links:
     - url: https://jsonplaceholder.typicode.com/users
       title: Users API
