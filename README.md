@@ -17,7 +17,7 @@ Table of Contents:
 Installation:
 To get started with this project, clone the repository and install the dependencies.
 
-git clone <repository-url>
+git clone [<repository-url>](https://github.com/Atharva-Sandesh-brillio/realtor_Assignment.git)
 cd realtor
 npm install
 
