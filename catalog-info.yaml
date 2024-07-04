@@ -11,3 +11,4 @@ spec:
   lifecycle: production
   owner: "guests"
   system: realtor_system
+  tags: ["frontend", "react", "UserAuth"]
