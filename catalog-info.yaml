@@ -29,4 +29,3 @@ spec:
       type: consumed
   ci/cd:
     - github-actions
-  
