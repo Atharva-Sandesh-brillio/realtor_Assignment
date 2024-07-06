@@ -15,17 +15,17 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: "guests"
+  owner: guests
   system: realtor_system
   providesApis:
-    - Users-api
+    - users-api
   consumesApis:
-    - Photos-api
+    - photos-api
   dependsOn:
-    - service:another-service
-    - api:some-external-api
-    - library:some-library
-    - database:some-database
+    - service: another-service
+    - api: some-external-api
+    - library: some-library
+    - database: some-database
   links:
     - url: https://jsonplaceholder.typicode.com/users
       title: Users API
