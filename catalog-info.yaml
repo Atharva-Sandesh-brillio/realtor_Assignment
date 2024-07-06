@@ -15,7 +15,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: guests
+  owner: "guests"
   system: realtor_system
   providesApis:
     - users-api
