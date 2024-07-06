@@ -2,13 +2,6 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: realtor_Assignment
-   links:
-    - url: https://jsonplaceholder.typicode.com/users
-      title: Users API
-      type: provided
-    - url: https://jsonplaceholder.typicode.com/photos
-      title: Photos API
-      type: consumed
   description: Sample Component for realtor assignment.
   annotations:
     github.com/project-slug: Atharva-Sandesh-brillio/realtor_Assignment
@@ -33,4 +26,10 @@ spec:
     - api:some-external-api
     - library:some-library
     - database:some-database
- 
+  links:
+    - url: https://jsonplaceholder.typicode.com/users
+      title: Users API
+      type: provided
+    - url: https://jsonplaceholder.typicode.com/photos
+      title: Photos API
+      type: consumed
