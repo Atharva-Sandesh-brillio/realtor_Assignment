@@ -12,13 +12,13 @@ metadata:
     - realestate
     - node-js
     - development
+  links:
+    - url: https://www.mapmyfitness.com/
+      title: fitness
+    - url: https://www.youtube.com/
+      title: youtube
 spec:
   type: service
   lifecycle: production
   owner: "guests"
   system: realtor_system
-  links:
-    - url: https://jsonplaceholder.typicode.com/users
-      title: Users API
-    - url: https://jsonplaceholder.typicode.com/photos
-      title: Photos API
