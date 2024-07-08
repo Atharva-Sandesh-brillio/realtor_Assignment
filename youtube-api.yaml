@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: youtube-api
+  description: API for YouTube data
+spec:
+  type: openapi
+  lifecycle: production
+  owner: guests
+  definition: |
+    openapi: 3.0.0
+    info:
+      title: YouTube API
+      version: 1.0.0
+    paths:
+      /youtube:
+        get:
+          summary: Get YouTube data
+          responses:
+            '200':
+              description: YouTube data retrieved successfully
