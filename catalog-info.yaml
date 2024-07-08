@@ -22,3 +22,7 @@ spec:
   lifecycle: production
   owner: "guests"
   system: realtor_system
+  providesApis:
+    - fitness-api
+  consumesApis:
+    - youtube-api
