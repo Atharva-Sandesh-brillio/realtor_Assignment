@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: fitness-api
+  description: API for fitness tracking
+spec:
+  type: openapi
+  lifecycle: production
+  owner: guests
+  definition: |
+    openapi: 3.0.0
+    info:
+      title: Fitness API
+      version: 1.0.0
+    paths:
+      /fitness:
+        get:
+          summary: Get fitness data
+          responses:
+            '200':
+              description: Fitness data retrieved successfully
