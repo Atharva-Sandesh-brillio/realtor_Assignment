@@ -1,4 +1,4 @@
-𝐑𝐞𝐚𝐥𝐭𝐨𝐫 𝐀𝐬𝐬𝐢𝐠𝐧𝐦𝐞𝐧𝐭
+𝐑𝐞𝐚𝐥𝐭𝐨𝐫 𝐀𝐬𝐬𝐢𝐠𝐧𝐦𝐞𝐧𝐭 - auth
 
 Overview:
 This project is a web application for managing real estate leads and sources. It includes features for user authentication (login, signup, forgot password), managing sources through a modal dialog, and maintaining user sessions.
@@ -9,10 +9,10 @@ Table of Contents:
 3) Project Structure
 4) Features
 5) Dependencies
-6) API Endpoints
-7) Usage
-8) Contributing
-9) License
+7) API Endpoints
+8) Usage
+9) Contributing
+10) License
 
 Installation:
 To get started with this project, clone the repository and install the dependencies.
