@@ -1,4 +1,4 @@
- 𝐑𝐞𝐚𝐥𝐭𝐨𝐫 𝐀𝐬𝐬𝐢𝐠𝐧𝐦𝐞𝐧𝐭
+𝐑𝐞𝐚𝐥𝐭𝐨𝐫 𝐀𝐬𝐬𝐢𝐠𝐧𝐦𝐞𝐧𝐭
 
 Overview:
 This project is a web application for managing real estate leads and sources. It includes features for user authentication (login, signup, forgot password), managing sources through a modal dialog, and maintaining user sessions.
