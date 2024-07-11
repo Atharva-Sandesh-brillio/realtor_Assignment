@@ -15,8 +15,10 @@ metadata:
   links:
     - url: https://www.mapmyfitness.com/
       title: fitness
+      type: Provided
     - url: https://www.youtube.com/
       title: youtube
+      type: Consumed
 spec:
   type: service
   lifecycle: production
