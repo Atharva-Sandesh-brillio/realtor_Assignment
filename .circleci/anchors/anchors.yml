@@ -1,3 +1,5 @@
-# .circleci/anchors/anchors.yml
-
-# No anchors defined in the original config
+# If you have any anchors, define them here
+anchors: &default_steps
+  - checkout
+  - node/install-packages:
+      pkg-manager: npm
