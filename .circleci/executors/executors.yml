@@ -1,0 +1,7 @@
+# .circleci/executors/executors.yml
+
+executors:
+  default-executor:
+    docker:
+      - image: circleci/node:14
+    working_directory: ~/repo
