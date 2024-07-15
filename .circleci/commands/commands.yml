@@ -1,0 +1,44 @@
+# .circleci/commands/commands.yml
+
+commands:
+  install-packages:
+    description: "Install npm packages"
+    steps:
+      - run:
+          name: Install dependencies
+          command: npm install
+
+  run-tests:
+    description: "Run tests"
+    steps:
+      - run:
+          name: Run tests
+          command: npm test --passWithNoTests
+
+  build-project:
+    description: "Build the project"
+    steps:
+      - run:
+          name: Build project
+          command: npm run build
+
+  create-artifacts-dir:
+    description: "Create the ~/artifacts directory if it doesn't exist"
+    steps:
+      - run:
+          name: Create the ~/artifacts directory if it doesn't exist
+          command: mkdir -p ~/artifacts
+
+  copy-artifacts:
+    description: "Copy build artifacts"
+    steps:
+      - run:
+          name: Copy artifacts
+          command: cp -R build dist public .output .next .docusaurus ~/artifacts 2>/dev/null || true
+
+  deploy:
+    description: "Deploy the application"
+    steps:
+      - run:
+          name: deploy
+          command: '#e.g. ./deploy.sh'
