@@ -1,0 +1,28 @@
+name: Validate CircleCI Config
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate_circleci_config:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install CircleCI CLI
+      run: |
+        curl -fLSs https://circle.ci/cli | bash
+        circleci update
+
+    - name: Pack CircleCI config
+      run: circleci config pack .circleci > packed_config.yml
+
+    - name: Validate CircleCI config
+      run: circleci config validate packed_config.yml
