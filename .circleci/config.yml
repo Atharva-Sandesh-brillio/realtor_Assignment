@@ -1,25 +1,16 @@
-# .circleci/config.yml
-
 version: 2.1
-orbs:
-  node: circleci/node@5
 
-# Import executors
 import:
-  - .circleci/executors/executors.yml
+  - anchors.yml
+  - jobs.yml
+  - commands.yml
+  - executors.yml
 
-# Import jobs
-import:
-  - .circleci/jobs/jobs.yml
-
-# Import commands
-import:
-  - .circleci/commands/commands.yml
-
-# Import workflows
-import:
-  - .circleci/workflows/workflows.yml
-
-# Import anchors (if any)
-import:
-  - .circleci/anchors/anchors.yml
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - test-node
+      - build-node:
+          requires:
+            - test-node
